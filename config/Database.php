@@ -5,7 +5,7 @@
         private $host = 'localhost';
         private $db_name = 'php-api';
         private $username = 'root';
-        private $password = 'admin;'
+        private $password = 'admin';
         private $conn;
 
         // Database Connect
