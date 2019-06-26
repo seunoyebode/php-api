@@ -37,6 +37,16 @@
                         categories c ON p.category_id = c.id
                         ORDER BY
                         p.created_at DESC';
+
+            // Prepare Statement
+            $stmt = $this->conn->prepare($query);
+
+            //Execute Query
+
+            $stmt->execute();
+
+            return $stmt;
+
         }
     }
 ?>
