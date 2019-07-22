@@ -1,4 +1,10 @@
 <?php 
+
+// error reporting
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+
     // Headers
     header('Access-Control-Allow-Origin');
     header('Content-Type: application/json');
@@ -43,7 +49,8 @@
         }
 
         // Turn to JSON and output
-        echo json_encode($posts_arr);
+        json_encode($posts_arr);
+        
     }
     else
     {

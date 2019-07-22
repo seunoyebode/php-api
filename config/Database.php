@@ -4,12 +4,12 @@
         //Database Parameters
         private $host = 'localhost';
         private $db_name = 'php-api';
-        private $username = 'root';
-        private $password = 'admin';
+        private $username = 'admin';
+        private $password = 'root';
         private $conn;
 
         // Database Connect
-        public function connetc()
+        public function connect()
         {
             $this->conn = null;
 
